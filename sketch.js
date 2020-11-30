@@ -39,6 +39,6 @@ function draw() {
 
 function keyPressed() {
 	if (keyDown("up")) {
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:80,y:-80});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:78,y:-78});
 	}	
 }
