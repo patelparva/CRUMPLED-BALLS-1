@@ -15,7 +15,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	paper=new Paper(100,200,30);
+	paper=new Paper(100,200,40);
 	ground = new Ground(width/2,680,width,20);
 	b1=new Dustbin(880,630,20,80);
 	b2=new Dustbin(950,660,120,20);
@@ -30,8 +30,6 @@ function draw() {
   rectMode(CENTER);
   background(0);
   
-  drawSprites();
-  
   paper.display();
   ground.display();
   b1.display();
@@ -43,6 +41,6 @@ function draw() {
 
 function keyPressed() {
 	if (keyDown("up")) {
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-85});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:38,y:-38});
 	}	
 }
