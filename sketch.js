@@ -35,12 +35,10 @@ function draw() {
   b1.display();
   b2.display();
   b3.display();
-
-  keyPressed();
 }
 
 function keyPressed() {
 	if (keyDown("up")) {
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:38,y:-38});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:80,y:-80});
 	}	
 }
